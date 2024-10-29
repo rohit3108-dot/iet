@@ -1,0 +1,316 @@
+1)WRITE A CPP PROGRAM TO SWAP 2 VARIABLES WITHOUT USING 3RD VARIABLE.
+#include <iostream>
+using namespace std;
+
+
+int main() 
+{
+    int x=5;
+    int y=8;
+    
+    swap(x,y);
+    cout<<"value of x = "<<x<<endl;
+    cout<<"value of y = "<<y<<endl;
+    return 0;
+}
+
+
+
+ 2)WRITE A CPP PROGRAM TO CHECK WHETHER THE GIVEN NUMBER IS //PALINDROM OR NOT.
+#include<iostream>
+using namespace std;
+#include<string.h>
+
+int main()
+{
+    int num;
+    int rev=0;
+    
+    cout<<"enter the number"<<endl;
+    cin>>num;
+    int oldno=num;
+    while(num!=0)
+   { 
+       
+   rev=rev*10+num%10;
+ 
+   num=num/10;
+ }
+ if(oldno==rev)
+ {
+     cout<<"  Given number is a Palindrom number"<<endl;
+ }
+ else
+ {
+     cout<<"  Given number is not a Palindrom number"<<endl;
+ }
+   
+}
+
+
+
+3)WRITE A CPP PROGRAM TO DISPLAY 1ST 25 PRIME NUMBER.
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int count = 0; 
+    int num = 2;    
+    cout << "The first 25 prime numbers are: " << endl;
+
+    
+    while (count < 25) {
+        int Prime = 1; 
+
+        for (int i = 2; i <= num / 2; i++) 
+        {
+            if (num % i == 0) 
+            {
+                Prime = 0;  
+                break;       
+            }
+        }
+       while (count < 25)
+       {
+        if (Prime) {
+            cout << num << " ";
+            count++;
+        }
+            num++;
+    }
+
+    cout << endl;
+    return 0;
+}
+
+
+
+4)WRITE A CPP PROGRAM TO DISPLAY FACTORIAL FROM NUMBER 5 TO 8.
+
+#include<iostream>
+using namespace std;
+int main()
+{
+     int num;
+     
+    for( num=5;num<=8;num++)
+    {
+    int fact=1;
+    for(int i=2;i<=num;i++)
+    {
+        
+        fact=fact*i;
+        
+    }
+    cout<<"fact of "<<num<<" : "<<fact<<endl;
+    }   
+    
+}
+
+
+
+//5)WRITE A CPP PROGRAM TO DISPLAY SUMMATION OF  EVEN AND ODD NUMBERS IN AN ARRAY OF INTEGERS.
+
+#include<iostream>
+using namespace std;
+int main()
+{
+     int n;
+     cout<<"enter the number"<<endl;
+     cin>>n;
+     
+     int evensum=0;
+     int oddsum=0;
+     int arr[n];
+     
+     cout<<"enetr the element into the array"<<endl;
+     for(int i=0;i<n;i++)
+     {
+         cin>>arr[i];
+         
+     }
+     for(int i=0;i<n;i++)
+     {
+       if(arr[i]%2==0)
+       {
+           evensum=evensum+arr[i];
+           
+       }
+       else
+       {
+           oddsum=oddsum+arr[i];
+           
+       }
+         
+     }
+     cout<<"addition of even element"<<" "<<evensum<<endl;
+     cout<<"addition of odd element"<<" "<<oddsum;
+    
+}
+
+
+
+//6)WRITE A CPP PROGRAM TO CHANGE THE CASE OF EACH CHARACTER IN A GIVEN STRING.
+
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int main() {
+    string str="Hello World";
+    int len;
+    
+    len=str.length();
+    
+    for (int i = 0; i < len; ++i) 
+    {
+      
+        if (str[i] >= 'a' && str[i] <= 'z') 
+        {
+            str[i] = str[i] - 32;
+        }
+       
+        else if (str[i] >= 'A' && str[i] <= 'Z') {
+            str[i] = str[i] + 32;
+        }
+    }
+    
+    cout << "Modified string: " << str << endl;
+   
+    return 0;
+}
+
+
+
+
+
+// 7)Write a template function swap () to swap the variables of int, char and complex types 
+
+#include <iostream>
+#include <complex>
+
+using namespace std;
+
+// template <typename T>
+// void swap(T &a, T &b)
+// {
+//     T temp = a;
+//     a = b;
+//     b = temp;
+// }
+
+int main() {
+    
+    int x = 5, y = 10;
+    cout << "Before swap: x = " << x << ", y = " << y << endl;
+    swap(x, y);
+    cout << "After swap: x = " << x << ", y = " << y << endl;
+    cout<<endl;
+
+   cout<<"Swap char values"<<endl;
+    char c1 = 'A', c2 = 'B';
+    cout << "Before swap: c1 = " << c1 << ", c2 = " << c2 << endl;
+    swap(c1, c2);
+    cout << "After swap: c1 = " << c1 << ", c2 = " << c2 << endl;
+    cout<<endl;
+
+   cout<<"Swap complex values"<<endl;
+    complex<double> comp1(1.0, 2.0), comp2(3.0, 4.0);
+    cout << "Before swap: comp1 ="<< comp1 << ", comp2 ="<< comp2 << endl;
+    swap(comp1, comp2);
+    cout << "After swap: comp1 ="<< comp1 << ", comp2 ="<< comp2 << endl;
+
+    return 0;
+}
+
+
+
+
+// 8)C++ Program to Find number of Digits in any number
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int num;
+    int count=0;
+    int numdigit=0;
+    
+    cout<<"enter the number"<<endl;
+    cin>>num;
+    
+    while(num>0)
+  {
+     num=num/10;
+     count++;
+    }
+    
+  cout<<count;
+    
+    return 0;
+}
+
+
+
+// 9)C++ Program to Reverse a Number
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num;
+    int rev=0;
+    int oldnum;
+    
+    cout<<"enter the number"<<endl;
+    cin>>num;
+    oldnum=num;
+    while(num>0)
+    {
+        rev=rev*10+num%10;
+        num=num/10;
+        
+        
+    }
+    cout<<"before reverse="<<oldnum<<endl;
+    cout<<"after reverse="<<rev;
+    
+}
+
+
+
+
+10)C++ Program to remove all special characters from a given string.
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+int main() {
+   
+    int num;
+    char ch;
+    string str;
+    string result;
+    
+    cout << "Enter a string: ";
+    cin>>str;
+    num=str.size();
+
+  for (int i = 0; i < num; ++i) 
+  {
+        ch = str[i];
+        if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z') || (ch >= '0' && ch <= '9')) 
+        {
+            result =result+ ch;
+        }
+    
+  }
+
+    cout << "new string: " << result << endl;
+
+    return 0;
+}
+

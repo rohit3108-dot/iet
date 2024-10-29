@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ex16</title>
+	<link rel="icon" href="logoin.jpg">
+  </head>
+  <body>
+	
+	<table width="600" align="center">
+	  <caption><h2>List Of Mobiles</h2></caption>
+	  <tr>
+	    <td>
+		  <img src="https://www.flipkart.com/vivo-t3-lite-5g-majestic-black-128-gb/p/itm977c89a44d373?pid=MOBHFTYB4ZHAAGFS&lid=LSTMOBHFTYB4ZHAAGFS9V33ZB&marketplace=FLIPKART&q=vivo+mobile+5g+under+15000&store=tyy%2F4io&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_13_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_13_na_na_na&fm=search-autosuggest&iid=f39098e5-32c1-4f4c-a375-db36448e5e64.MOBHFTYB4ZHAAGFS.SEARCH&ppt=sp&ppn=sp&ssid=07kdgavhz40000001727082865623&qH=68760fd6378a6295" width="120" height="150">
+		</td>
+		<td>
+		  <h3>vivo T3 Lite 5G</h3>
+		  <ul>
+			<li>6 GB RAM | 128 GB ROM | Expandable Upto 1 TB<li>
+			<li>16.66 cm (6.56 inch) Display<li>
+			<li>50MP + 2MP | 8MP Front Camera<li>
+			<li>5000 mAh Battery<li>
+			<li>Dimensity 6300 Processor</li>
+		  </ul>
+		</td>
+		<td>
+		  <strong>&#8377;5999</strong> <br>
+		  <del>&#8377;11499</del> <bR>
+		  <em>47%</em> off
+		</td>		
+	  </tr>
+	  <tr>
+	    <td>
+		  <img src="https://www.flipkart.com/realme-12x-5g-twilight-purple-128-gb/p/itmaa3401e5370b5?pid=MOBGYQ6BVK8HYMAG&lid=LSTMOBGYQ6BVK8HYMAGXL2LRY&marketplace=FLIPKART&q=realme+mobile+5g&store=tyy%2F4io&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_2_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_2_na_na_na&fm=organic&iid=7e21b1bd-d045-449f-b3c6-997ed253182a.MOBGYQ6BVK8HYMAG.SEARCH&ppt=hp&ppn=homepage&ssid=y2ip4yjq6o0000001727082520359&qH=8ab5e6d477d4aa01" width=120 height=150>
+		</td>
+		<td>
+		  <h2>realme 12x 5G</h2>
+		  <ul>
+		    <li>8 GB RAM | 128 GB ROM | Expandable Upto 2 TB<li>
+			<li>17.07 cm (6.72 inch) Full HD+ Display<li>
+			<li>50MP + 2MP | 8MP Front Camera<li>
+			<li>5000 mAh Battery<li>
+			<li>Dimensity 6100+ Processor</li>
+		  </ul>
+		</td>
+	    <td>
+		  <strong>&#8377;11999</strong> <bR>
+		  <del>&#8377;14999</del> <bR>
+		  <em>20%</em> off
+		</td>
+	   </tr>
+	</table> 
+ 
+ 
+ 
+	
+  </body>
+</html>
